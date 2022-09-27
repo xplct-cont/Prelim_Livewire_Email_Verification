@@ -3,7 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SiteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +35,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/booking', [BookingController::class, 'index']);
     Route::get('/edit/{booking}', [BookingController::class, 'edit']);
     Route::get('/delete/{booking}', [BookingController::class, 'destroy']);
+
+
+    Route::get('/logs' ,[SiteController::class, 'index']);
+    Route::get('/logs', [SiteController::class, 'logs'])->name('logs');
 });

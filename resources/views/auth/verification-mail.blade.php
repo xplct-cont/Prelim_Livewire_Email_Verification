@@ -1,4 +1,4 @@
-<h1>Student App</h1>
+<h1>Bus Booking App</h1>
 
 <p>
     Welcome {{$user->name}}!

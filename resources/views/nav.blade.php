@@ -8,6 +8,7 @@
         <div class="navbar-nav ms-auto">
           @if (auth()->check())
           <a class="nav-link" href="/dashboard">Dashboard</a>
+          <a class="nav-link" href="/logs">Logs</a>
           <a class="nav-link" href="{{'/logout'}}" style="color:white">Logout</a>  
           @else
           <a class="nav-link" href="/register" style="color:white">Register</a>

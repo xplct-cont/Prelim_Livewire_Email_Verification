@@ -1,6 +1,6 @@
 <div>
-    <table class="table table-striped text-center mt-4 shadow-lg p-3 mb-5 bg-white rounded">
-        <thead class="table table-bordered">
+    <table class="table table-hover text-center table-sm mt-4 shadow-lg p-3 mb-5 bg-white rounded">
+        <thead class="bg-info text-dark" style="font-size:15px;">
             <tr>
                 <th>Operator Name</th>
                 <th>Bus Name</th>
@@ -11,7 +11,7 @@
                 <th>Delete</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="" style="font-size: 13.5px;">
             @foreach ($bookings as $booking)
                 <tr>
                     <td>{{ $booking->operator_name }}</td>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="row">
+    <div class="">
         <div class="col-md-4 offset-md-4">
             @if (session('message'))
                <div class="alert alert-success">

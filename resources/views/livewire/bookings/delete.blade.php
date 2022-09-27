@@ -54,12 +54,13 @@
                 </tr>
 
             </table>
-            <div class="d-flex justify-content-end">
-                <button class="btn btn-danger" wire:click="delete()">
-                    Delete
-                </button>
+            <div class="d-flex justify-content-between">
+               
                 <button class="btn btn-info mx-2" wire:click="back()">
                     Cancel
+                </button>
+                <button class="btn btn-danger" wire:click="delete()">
+                    Delete
                 </button>
             </div>
         </div>

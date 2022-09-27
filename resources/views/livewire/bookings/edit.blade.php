@@ -59,12 +59,14 @@
              <div class="text-danger">{{$message}}</div>
              @enderror
          </div>
-          <div class="form-group mb-2 d-grip gap-2 d-md-flex justify-content-end">
+          <div class="form-group mb-2 d-grip gap-2 d-md-flex justify-content-between">
+           
+            <button class="btn btn-danger mx-2" wire:click="back()">
+                Back
+            </button>
+
             <button class="btn btn-success" wire:click="editBooking()">
                 Save Changes
-            </button>
-            <button class="btn btn-info mx-2" wire:click="back()">
-                back
             </button>
         </div>
      </div>

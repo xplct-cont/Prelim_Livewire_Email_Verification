@@ -1,4 +1,29 @@
+
+
+
 <div>
+   
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <select class="form-select" wire:model.lazy="bus_name">
+                    <option value="all">All</option>
+                    <option value="Charter Bus Corp.">Charter Bus Corp.</option>
+                    <option value="Dragon Lines Bus">Dragon Lines Bus</option>
+                    <option value="Ceres Bus Lines">Ceres Bus Lines</option>
+                </select>
+            </div>
+           
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Search Passenger Name" wire:model.lazy="search">
+            </div>
+        </div>
+
+
+
     <table class="table table-hover text-center table-sm mt-4 shadow-lg p-3 mb-5 bg-white rounded">
         <thead class="bg-info text-dark" style="font-size:15px;">
             <tr>
@@ -29,5 +54,9 @@
             @endforeach
         </tbody>
     </table>
+    <div class="d-flex justify-content-end">
+        {{$bookings->links()}}
+    </div>
+       
 </div>
 
